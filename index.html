@@ -1,0 +1,52 @@
+<!--  Zachary Wass  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <script src="code.js">
+    </script>
+        
+        <link href="main.css" rel="stylesheet">
+    
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Meme Fun</title>
+            <h1>
+                Move the meme using the buttons!
+            </h1>
+            <style>
+                body {
+                    font-size:19px;
+                    padding:50px;
+                }
+                
+                button {
+                    font-size:16px;
+                    padding:10px;
+                }
+
+                input {
+                    font-size:19px;
+                    padding:50px;
+                    text-align:center;
+                }
+              
+                #memeImage {
+                    position: absolute;
+                    top: 210px;
+                    left: 50px;
+                    pointer-events: none; /* allows user to click stop bttn even if the img covers the bttn */
+                }
+
+            </style>
+        </head>
+    <body>
+
+        <button id="startBtn" onclick="startMvmt()">Start Movement</button>
+        <button id="stopBtn" onclick="stopMvmt()" disabled>Stop Movement</button>
+        <button id="resetImgBtn" onclick="resetImgPosition()" disabled>Reset Image</button>
+        <img id="memeImage" src="meme.png" style="position: absolute; top: 210px; left: 50px;">
+
+
+
+    </body>
