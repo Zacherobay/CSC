@@ -1,0 +1,38 @@
+
+ <!--  the font style named ".big" is for the size of the text that isn't the buttons. -->
+ <!--  then, i used "<div class ='big' id='operation'>0 * 0</div> to apply the font size and padding to the text that isnt part of the buttons.  -->
+ <!--  NOTE: TO RESET THE HIGH SCORE, GO TO INSPECT ELEMENT ON THE GAME'S WEB PAGE, THEN APPLICATION, THEN LOCAL STORAGE, THEN FILE:// AND RIGHT CLICK THAT THEN CLICK CLEAR.
+   THEN REFRESH THE PAGE, AND THE HIGH SCORE WILL BE CLEARED.-->
+
+<html>
+<script src="code.js">
+</script>
+    <style>
+        button {
+            font-size:25px;
+            padding:16px;
+        }
+        .big {
+            font-size:36px;
+            padding:25px;
+        }
+      
+    </style>
+    <div id="highScore">High Score: 0</div>
+    <div id="currentScore">Current Score: 0</div>
+    <button id="startBtn" onclick="startGame()">START</button>
+    <div id="timeDisplay" hidden>Time left: 10</div>
+    <br>
+    What is the answer?
+    <br>
+    <div class="big" id="operation">0 * 0</div>
+    <br>
+    <button onclick="checkAnswer(1)" id="btn1">0</button>
+    <button onclick="checkAnswer(2)" id="btn2">0</button>
+    <br>
+    <button onclick="checkAnswer(3)" id="btn3">0</button>
+    <button onclick="checkAnswer(4)" id="btn4">0</button>
+
+    <link href="main.css" rel="stylesheet">
+
+</html>
