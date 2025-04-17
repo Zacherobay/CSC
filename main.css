@@ -1,0 +1,35 @@
+/* 
+declaration block:
+
+selector{
+    property: value;
+    property2: value;
+}
+*/
+
+body{
+    background-color: cyan;
+    color: black;
+}
+
+h1 {
+    position: relative; /* positions header properly */
+    color: black;
+}
+
+#memeImage {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    pointer-events: none; /* prevents img from being clickable */
+    max-width: 16.5%; /* limits img width to the % set */
+    height: auto; /* limits img height to aspect ratio of device screen */
+}
+
+
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(0, 207, 207);
+}
