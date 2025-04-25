@@ -1,0 +1,40 @@
+/* 
+declaration block:
+
+selector{
+    property: value;
+    property2: value;
+}
+*/
+body{
+    background-color: cyan;
+    color: black;
+    text-shadow: 0 0 10px #b284be, 0 0 20px #b284be, 0 0 30px #b284be, 0 0 40px #b284be, 0 0 50px #b284be;
+}
+
+h1 {
+    position: relative; /* positions header properly */
+    color: black;
+    text-shadow: 0 0 10px #b284be, 0 0 20px #b284be, 0 0 30px #b284be, 0 0 40px #b284be, 0 0 50px #b284be; /* adds glow effect */
+}
+
+#memeImage {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    pointer-events: none; /* prevents img from being clickable */
+    max-width: 16.5%; /* limits img width to the % set */
+    height: auto; /* limits img height to aspect ratio of device screen */
+}
+
+
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    text-shadow: 0 0 10px #ffcd89, 0 0 20px #ffcd89, 0 0 30px #ffcd89; /* adds glow effect */
+    color: white; /* text color */
+    background-color: black; /* keeps the bttn background same as the page */
+    border: 4px solid #ffcd89; /* adds glowing border */
+    border-radius: 5px; /* adds rounded corners to the border */
+}

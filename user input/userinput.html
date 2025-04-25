@@ -1,0 +1,49 @@
+<!--  Zachary Wass  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <script src="userinput.js">
+    </script>
+        
+        <link href="userinput.css" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <h1>
+        Please input your first name, last name, and zip code below.
+    </h1>
+        <h2>Navigation</h2>
+            <button id="homeBtn" onclick="homeBtn()">Home</button> <button id="boardsBtn" onclick="boardsBtn()">Boards</button> <br>
+    <style>
+        body {
+            font-size:19px;
+            padding:50px;
+        }
+        
+        input {
+            font-size:19px;
+            padding:50px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        input {
+            font-size:20px;
+            padding:10px;
+            text-align:left;
+        }
+    </style>
+    <h2>First Name</h2>
+    <input type="text" id="firstName"><br>
+    <h2>Last Name</h2>
+    <input type="text" id="lastName"><br>
+    <h2>Zip Code</h2>
+    <input type="text" id="zipCode"><br>
+    <br>
+    <input type="submit" id="submit" value="Submit" onclick="validateStrings()">
+</body>
+</html>

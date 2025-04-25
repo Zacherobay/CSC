@@ -1,0 +1,51 @@
+
+
+
+ <!--  NOTE: TO RESET THE HIGH SCORE, GO TO INSPECT ELEMENT ON THE GAME'S WEB PAGE, THEN APPLICATION, THEN LOCAL STORAGE, THEN FILE:// AND RIGHT CLICK THAT THEN CLICK CLEAR.
+   THEN REFRESH THE PAGE, AND THE HIGH SCORE WILL BE CLEARED.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Math Game</title>
+        <link href="mathgameMain.css" rel="stylesheet" >
+        <style>
+        body {
+            font-size:19px;
+            padding:50px;
+        }
+        button {
+            font-size:25px;
+            padding:16px;
+        }
+        .big {
+            font-size:36px;
+            padding:25px;
+        }
+    </style>
+           <header>
+            <h1>Welcome to the Math Game!</h1>
+                    <h2>Site Navigation</h2>
+                    <button id="homeBtn" onclick="homeBtn()">Home</button> <button id="boardsBtn" onclick="boardsBtn()">Boards</button> <br>
+    <div id="highScore" class="glow-text">High Score: 0</div>
+    <div id="currentScore" class="glow-text">Current Score: 0</div>
+    <button id="startBtn" onclick="startGame()">START</button>
+    <div id="timeDisplay" hidden>Time left: 10</div>
+    <br>
+    <div id="answer" class="glow-text">What is the answer?</div>
+    <br>
+    <div class="big" id="operation">0 * 0</div>
+    <br>
+    <button onclick="checkAnswer(1)" id="btn1">0</button>
+    <button onclick="checkAnswer(2)" id="btn2">0</button>
+    <br>
+    <button onclick="checkAnswer(3)" id="btn3">0</button>
+    <button onclick="checkAnswer(4)" id="btn4">0</button>
+
+    <link href="mathgameMain.css" rel="stylesheet">
+
+    <script src="mathgameCode.js"></script>
+</header>
+</html>
